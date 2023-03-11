@@ -149,10 +149,20 @@
   },
   "npm": {
     "specifiers": {
+      "@hono/zod-validator": "@hono/zod-validator@0.0.6_hono@3.0.3_zod@3.21.4",
       "bloom-filters": "bloom-filters@3.0.0",
-      "bloom-filters@3": "bloom-filters@3.0.0"
+      "bloom-filters@3": "bloom-filters@3.0.0",
+      "hono": "hono@3.0.3",
+      "zod": "zod@3.21.4"
     },
     "packages": {
+      "@hono/zod-validator@0.0.6_hono@3.0.3_zod@3.21.4": {
+        "integrity": "sha512-K5XS5A19OHc1loqztcCVKvxejEvOBSnicwBk0hGA077SqzGq8/Bbi6dEgQ/7WaNQRPE6zqdqyU4mtwAonVZxlg==",
+        "dependencies": {
+          "hono": "hono@3.0.3",
+          "zod": "zod@3.21.4"
+        }
+      },
       "base64-arraybuffer@1.0.2": {
         "integrity": "sha512-I3yl4r9QB5ZRY3XuJVEPfc2XhZO6YweFPI+UovAzn+8/hb3oJ6lnysaFcjVpkCPfVWFUDvoZ8kmVDP7WyRtYtQ==",
         "dependencies": {}
@@ -173,6 +183,10 @@
       },
       "cuint@0.2.2": {
         "integrity": "sha512-d4ZVpCW31eWwCMe1YT3ur7mUDnTXbgwyzaL320DrcRT45rfjYxkt5QWLrmOJ+/UEAI2+fQgKe/fCjR8l4TpRgw==",
+        "dependencies": {}
+      },
+      "hono@3.0.3": {
+        "integrity": "sha512-6Lb/TPH7Me1GAjFR7k/duzTcHS5y+rxFyL6Ky0kYQQlu92l99t53CFMVcdNUpHeStarPOs4Uzl413zIvxaI15A==",
         "dependencies": {}
       },
       "is-buffer@2.0.5": {
@@ -208,6 +222,10 @@
         "dependencies": {
           "cuint": "cuint@0.2.2"
         }
+      },
+      "zod@3.21.4": {
+        "integrity": "sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==",
+        "dependencies": {}
       }
     }
   }
