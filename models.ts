@@ -1,8 +1,13 @@
+import 'https://deno.land/std@0.181.0/dotenv/load.ts'
 import { MongoClient } from 'https://deno.land/x/mongo@v0.31.1/mod.ts'
 import { filter } from './filter.ts'
 
 const client = new MongoClient()
-await client.connect('mongodb+srv://xxx/?authMechanism=SCRAM-SHA-1')
+const dbUrl = Deno.env.get('DB_URL')
+if (dbUrl === undefined || dbUrl === '') {
+  throw new Error('no `DB_URL` environment variable specified')
+}
+await client.connect(dbUrl)
 const db = client.database('shortUrl')
 const shortUrls = db.collection<ShortUrl>('shortUrls')
 
